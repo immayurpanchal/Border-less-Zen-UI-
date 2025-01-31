@@ -1,0 +1,24 @@
+:root[zen-compact-mode='true']:not([customizing]):not([inDOMFullscreen='true']) {
+	@media (-moz-bool-pref: 'zen.view.compact.hide-tabbar') or (-moz-bool-pref: 'zen.view.use-single-toolbar') {
+		& #zen-appcontent-wrapper {
+			margin-left: 0 !important;
+		}
+	}
+}
+
+:root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
+  @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") or (-moz-bool-pref: "zen.view.use-single-toolbar") {
+    & #zen-tabbox-wrapper {
+      margin: 0 !important;
+    }
+  }
+}
+
+:root[zen-single-toolbar='true']:not([customizing]) {
+	& #zen-appcontent-navbar-container {
+		display: flex;
+		-moz-window-dragging: drag;
+		min-height: 0 !important;
+		height: 0 !important;
+	}
+}
